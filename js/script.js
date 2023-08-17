@@ -12,6 +12,7 @@ function calcularMedia() {
     var mediaGeral = 0;
 
     for (var i = 0; i < 5; i++) {
+        // Input vazio = 0
         isNaN(parseFloat(notas1[i].value)) ? media += 0 : media += parseFloat(notas1[i].value) / 4;
         isNaN(parseFloat(notas2[i].value)) ? media += 0 : media += parseFloat(notas2[i].value) / 4;
         isNaN(parseFloat(notas3[i].value)) ? media += 0 : media += parseFloat(notas3[i].value) / 4;
