@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap');
+
+
+/* estilos gerais */
+body{
+    font-family: 'Tajawal', sans-serif;
+    margin: 0;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+li{
+    list-style-type: none;
+}
+
+input{
+    border: none;
+    outline: none ;
+    border-radius: 20px;
+    width: 235px;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+
+/* estilos especificos */
+.logo-senai{
+    width: 100px;
+}
+
+.imagem_ilustrativa{
+    max-width: 50%;
+}
+
+.titulo{
+    font-size: 4rem;
+}
+
+.box-titulo{
+    display: flex;
+    width: 410px;
+}
+
+.titulo_criterio{
+    position: relative;
+    font-size: 3rem;
+
+}
+
+
+/* decoração do titulo */
+.titulo_criterio::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 32px;
+    left: 13px;
+    background-color: #FFDA17;
+    width: 190px;
+    height: 15px;
+    z-index: -1;
+    
+
+}
+
+.card-criterios{
+    animation-name: slide;
+    animation-duration: 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    transform: translateX(-20px);
+    box-shadow: 0px 1px 3px 0px black;
+}
+
+.botao{
+    margin-top: 5vh;
+}
+
+.botao:hover{
+    transform: scale(105%);
+    transition: 300ms linear;
+}
+
+/* Cards */
+#calcular{
+    margin-top: 20vh;
+}
+
+.card{
+    max-width: 300px;
+    box-sizing: border-box;
+    border-radius: 15px !important;
+    gap: 15px;
+    background-color: #F5F5F5 !important;
+    margin-bottom: 4.5vh;
+    border: 0 !important;
+}
+
+
+.card input{
+    background-color: #F5F5F5;
+    margin-left: 2vh;
+}
+
+.card input:first-child{
+    font-size: 1.5rem;
+    color: #303030;
+}
+
+.card div{
+    background-color: #303030;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vh;
+}
+
+#nome{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1vh;
+    margin-bottom: 4vh;
+}
+
+#nome::placeholder{
+    color: black;
+}
+
+.media{
+    max-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-left: 20%;
+    gap: 4px;
+}
+
+.media p{
+    margin-top: 10%;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+.situacao{
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 2vh;
+    border-radius: 5px;
+}
+
+/* media geral */
+.aux_geral{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.geral{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    gap: 4px;
+    margin-top: 4vh;
+    max-height: 40px;
+    border-radius: 10px;
+    color: #f2f2f2;
+    background-color: #4D4D4D;
+    
+}
+
+.geral p{
+    margin-top: 7px;
+}
+
+
+/* calcular média btn */
+.calc{
+    background-color: #ffc107 !important;
+    color: black !important;
+    margin-top: 10vh;
+    width: 260px;
+    height: 45px;
+}
+
+.calc:hover{
+    background-color: #FFDA17 !important;
+    transform: scale(105%);
+    transition: 300ms linear;
+}
+
+.aux{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 10vh;
+}
+
+/* alunos abaixo da média */
+.abaixo{
+    margin-top: 20vh;
+}
+
+.titulo_alunos_abaixo{
+    position: relative;
+    font-size: 3rem;
+    margin-bottom: 5vh;
+}
+
+.titulo_alunos_abaixo::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 90px;
+    left: 13px;
+    background-color: #FFDA17;
+    width: 140px;
+    height: 15px;
+    z-index: -1;
+}
+
+#listaAlunosAbaixo li{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #4D4D4D;
+    color: white !important;
+    margin-top: 7vh;
+    margin-bottom: 5vh;
+    border-radius: 13px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+#listaAlunosAbaixo li p:last-child{
+    background-color: #303030;
+    border-radius: 0px 10px 10px 0px;
+    padding: 2rem 2rem;
+    margin: 0;
+    max-width: 80px;
+}
+
+#listaAlunosAbaixo li p:first-child{
+    padding: 1rem;
+    font-size: 1rem;
+    color: #bcbcbc;
+    
+}
+
+
+
+/* animações */
+
+@keyframes slide{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.aparecer-off{
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+
+.aparecer-on{
+    opacity: 1;
+}

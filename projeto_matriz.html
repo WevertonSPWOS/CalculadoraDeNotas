@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Notas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="/img/calculator.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <a href="/projeto_matriz.html">
+        <img src="img/SENAI-SP 1.svg" alt="logo-senai" class="logo-senai mb-5 p-2">
+    </a>
+
+    
+
+    <header class="container ">
+
+        <div class="row aparecer-off">
+
+            <section class="col-sm-12 col-md-6">
+                <div class="box-titulo">
+                    <h1 class="titulo">Calculadora de notas</h1>
+                </div>
+                <a href="#calcular" class="btn btn-warning col-5 p-2 justify-items-end botao">Calcular</a>
+            </section>
+
+            <img src="img/imagem_ilustrativa_header.svg" alt="imagem ilustrativa exames" class="col-md-6 imagem_ilustrativa ">
+        </div>
+       
+    </header>
+
+    <article class="container mt-5  ">
+        
+        <div class="row ">
+            <h1 class="col-sm-12 col-md-6 titulo_criterio">Critérios para calcular a média</h1>
+            <section class="col">
+                <div class="row p-3 card-criterios mb-4">
+                    <p>Média maior ou igual a 70 - Aprovado</p>
+                    
+                </div>
+        
+                <div class="row p-3 card-criterios mb-4">
+                    <p>Média maior ou igual a 50 e menor que 70 - Recuperação</p>
+        
+                </div>
+        
+                <div class="row p-3 card-criterios mb-4">
+                    <p>Média menor que 50 - Reprovado</p>
+                   
+        
+                </div>
+    
+            </section>
+
+        </div>
+
+    </article>
+
+ 
+
+    </section>
+    
+    <div class="container aparecer-off">
+        <h1 class="text-center" style="margin-bottom: 10vh;" id="calcular">Calcular</h1>
+        <div class="row align-items-center">
+            <div class="col-md-3 col-sm-6">
+                <div class="card">
+                    <input type="text" maxlength="20" placeholder="Nome" class="aluno">
+                    <input type="number" oninput="validacaoInput(this)" placeholder="1º Bimestre" class="nota1">
+                    <input type="number" oninput="validacaoInput(this)" placeholder="2º Bimestre" class="nota2">
+                    <input type="number" oninput="validacaoInput(this)" placeholder="3º Bimestre" class="nota3">
+                    <input type="number" oninput="validacaoInput(this)" placeholder="4º Bimestre" class="nota4">
+                    <!-- Exibição da média -->
+                    <div class="media">
+                        <p>Média</p> <p class="resultado"></p>
+                    </div>
+
+                    <!-- Situação de aprovação -->
+                    <p class="situacao"></p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card">
+                    <input type="text" maxlength="20" placeholder="Nome" class="aluno">
+                    <input type="number" oninput="validacaoInput(this)" placeholder="1º Bimestre" class="nota1">
+                    <input type="number" oninput="validacaoInput(this)" placeholder="2º Bimestre" class="nota2">
+                    <input type="number" oninput="validacaoInput(this)" placeholder="3º Bimestre" class="nota3">
+                    <input type="number" oninput="validacaoInput(this)" placeholder="4º Bimestre" class="nota4">
+                    <!-- Exibição da média -->
+                    <div class="media">
+                        <p>Média</p> <p class="resultado"></p>
+                    </div>
+
+                    <!-- Situação de aprovação -->
+                    <p class="situacao"></p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card">
+                    <input type="text" maxlength="20" placeholder="Nome" class="aluno">
+                    <input type="number" oninput="validacaoInput(this)" placeholder="1º Bimestre" class="nota1">
+                    <input type="number" oninput="validacaoInput(this)" placeholder="2º Bimestre" class="nota2">
+                    <input type="number" oninput="validacaoInput(this)" placeholder="3º Bimestre" class="nota3">
+                    <input type="number" oninput="validacaoInput(this)" placeholder="4º Bimestre" class="nota4">
+                    <!-- Exibição da média -->
+                    <div class="media">
+                        <p>Média</p> <p class="resultado"></p>
+                    </div>
+
+                    <!-- Situação de aprovação -->
+                    <p class="situacao"></p>
+                </div>
+            </div>
+
+            
+            <div class="col-md-3 col-sm-6">
+                <div class="card">
+                    <input type="text" maxlength="20" placeholder="Nome" class="aluno">
+                    <input type="number" oninput="validacaoInput(this)" placeholder="1º Bimestre" class="nota1">
+                    <input type="number" oninput="validacaoInput(this)" placeholder="2º Bimestre" class="nota2">
+                    <input type="number" oninput="validacaoInput(this)" placeholder="3º Bimestre" class="nota3">
+                    <input type="number" oninput="validacaoInput(this)" placeholder="4º Bimestre" class="nota4">
+                    <!-- Exibição da média -->
+                    <div class="media">
+                        <p>Média</p> <p class="resultado"></p>
+                    </div>
+
+                    <!-- Situação de aprovação -->
+                    <p class="situacao"></p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card">
+                    <input type="text" maxlength="20" placeholder="Nome" class="aluno">
+                    <input type="number" oninput="validacaoInput(this)" placeholder="1º Bimestre" class="nota1">
+                    <input type="number" oninput="validacaoInput(this)" placeholder="2º Bimestre" class="nota2">
+                    <input type="number" oninput="validacaoInput(this)" placeholder="3º Bimestre" class="nota3">
+                    <input type="number" oninput="validacaoInput(this)" placeholder="4º Bimestre" class="nota4">
+                    <!-- Exibição da média -->
+                    <div class="media">
+                        <p>Média</p> <p class="resultado"></p>
+                    </div>
+
+                    <!-- Situação de aprovação -->
+                    <p class="situacao"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="aux_geral">
+            <div class="geral">
+                <p id="mediaGeral">Média Geral</p>
+            </div>
+        </div>
+        
+        
+
+        <div class="aux">
+            <div class="btn calc resultado" onclick="calcularMedia()">
+                <p>Calcular média</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alunos abaixo da média -->
+    <article class="container abaixo aparecer-off ">
+        
+        <div class="row ">
+            <h1 class="col-sm-12 col-md-5 titulo_alunos_abaixo">Alunos abaixo da média:</h1>
+            <section class="col">
+                <div>
+                    <ul id="listaAlunosAbaixo">
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+    </article>
+
+
+    <script src="js/animacao.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
