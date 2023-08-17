@@ -25,7 +25,7 @@ GitHub: Plataforma de hospedagem de código-fonte que permite o compartilhamento
 Bootstrap: Framework de design front-end amplamente utilizado para criar interfaces web responsivas e estilizadas.
 
 
-![Captura de tela 2023-08-16 230136](https://github.com/Rodriguou/CalculadoraDeNotas/assets/131711415/3794bcc1-ba3a-4c41-ab09-9f7a126684c9)
+![Captura de tela 2023-08-16 230331](https://github.com/Rodriguou/CalculadoraDeNotas/assets/131711415/05eeab96-7860-44ec-b1d5-372653a5b660)
 
 
 # Acesse nosso site pelo link abaixo:
