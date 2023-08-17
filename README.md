@@ -1,12 +1,26 @@
 # Calculadora De Notas
-Projeto front-end do curso técnico em desenvolvimento de sistemas do SENAI. O objetivo deste projeto foi desenvolver uma página para calcular a média de notas de 5 alunos, e também calcular a média geral.
+Projeto front-end do curso técnico em desenvolvimento de sistemas do SENAI. O objetivo deste projeto foi desenvolver um site simples e intuitivo projetado para ajudar estudantes e professores a calcular as médias individuais de 5 alunos, a média geral da turma e determinar a situação de aprovação de cada aluno. Com esta ferramenta, você poderá simplificar o processo de acompanhamento do desempenho dos alunos e tomar decisões informadas sobre aprovação.
+
+# Funcionalidades do site
+- Cálculo de Médias Individuais: O sistema calcula automaticamente a média de cada aluno com base nas notas registradas. Isso fornece uma visão clara do desempenho de cada aluno em cada disciplina.
+
+- Cálculo de Média Geral: Além das médias individuais, o sistema também calcula a média geral da turma, dando uma noção do desempenho médio dos alunos.
+
+- Situação de Aprovação: Com base nas médias calculadas, o sistema determina automaticamente se um aluno está aprovado ou reprovado em cada disciplina ou 
+ avaliação. As regras de aprovação podem ser personalizadas de acordo com as políticas da instituição.
+
+- Interface intuitiva e limpa
+
 # Tecnologias utilizadas
-Figma;
+Figma: Ferramenta de criação de designs para sites
 
-HTML;
+HTML5: Linguagem de marcação para estruturar e apresentar o conteúdo do site.
 
-CSS;
+CSS3: Folhas de estilo para estilizar e melhorar a aparência do site.
 
-Bootstrap;
+JavaScript: Linguagem de programação para adicionar interatividade e funcionalidades avançadas ao site.
 
-JavaScript.
+GitHub: Plataforma de hospedagem de código-fonte que permite o compartilhamento e colaboração do projeto.
+
+Bootstrap: Framework de design front-end amplamente utilizado para criar interfaces web responsivas e estilizadas.
+
