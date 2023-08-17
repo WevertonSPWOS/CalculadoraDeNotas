@@ -32,3 +32,4 @@ Protótipo: https://www.figma.com/file/zU1ihBzIyRvDAGRruxjIjb/Notas-alunos?type=
 
 
 # Acesse nosso site pelo link abaixo:
+https://visionary-tiramisu-07d10e.netlify.app/
